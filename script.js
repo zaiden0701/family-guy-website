@@ -1,36 +1,36 @@
-//set
-const mainImgUrl = 'https://api.tvmaze.com/shows/84/images'
-const charImgUrl = 'https://api.tvmaze.com/shows/84/cast'
-const div = document.querySelector('div')
-
-
-//initial image
-fetch(mainImgUrl)
-    .then((resp) => resp.json())
-    .then((json) => {
-        alert(JSON.stringify(json));
+//fetch data
+const getMainImg = () => {
+    fetch('http://localhost:3000/images')
+    .then((resp) => (resp.json()))
+    .then((data) => {
+        console.log(data)
+        renderMainImg(data)
     })
+}
+getMainImg()
 
-function renderMainImg(main) {
+const getCast = () => {
+    fetch('http://localhost:3000/cast')
+    .then((resp) => (resp.json()))
+    .then((data) => {
+        console.log(data)
+        renderCastImg(data)
+    })
+}
+getCast()
+
+//render main image
+// const renderMainImg = (main) => {
+
+function renderMainImg(main){
+    const div = document.querySelector('div');
     main.forEach(mainImg => {
-      const img = document.createElement('img');
-      img.src = mainImg
-      img.innerHTML = mainImg.resolutions.medium
-      div.append(img);
-    });
+        const img = document.createElement('img');
+        img.src = mainImg;
+        img.innerHTML = mainImg.resolutions.medium;
+        div.append(img);
+      });
 }
 
-// grab character images
-// fetch(charImgUrl)
-//     .then((resp) => resp.json())
-//     .then((charData) => renderCharImg(charData.character.image.medium));
-
-// function renderCharImg(char) {
-//     const div = document.querySelector('div');
-//     char.forEach(charImg => {
-//       const img = document.createElement('img');
-//       img.src = charImg;
-//       img.innerHTML = charImg.name;
-//       div.append(img);
-//     });
-// }
+//render character images
+const renderCastImg = (cast) => {}
