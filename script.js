@@ -26,8 +26,8 @@ function renderMainImg(main){
     const div = document.querySelector('div');
     main.forEach(mainImg => {
         const img = document.createElement('img');
-        img.src = mainImg;
-        img.innerHTML = mainImg.resolutions.medium;
+        img.src = mainImg.resolutions.medium.url;
+        img.innerHTML = mainImg.resolutions.medium.url;
         div.append(img);
       });
 }

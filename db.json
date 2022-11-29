@@ -205,18 +205,6 @@
       }
     },
     {
-      "id": 543885,
-      "type": "background",
-      "main": false,
-      "resolutions": {
-        "original": {
-          "url": "https://static.tvmaze.com/uploads/images/original_untouched/218/547438.jpg",
-          "width": 1920,
-          "height": 1080
-        }
-      }
-    },
-    {
       "id": 675848,
       "type": "poster",
       "main": false,
@@ -298,18 +286,6 @@
           "url": "https://static.tvmaze.com/uploads/images/medium_portrait/423/1058269.jpg",
           "width": 210,
           "height": 295
-        }
-      }
-    },
-    {
-      "id": 1049558,
-      "type": "background",
-      "main": false,
-      "resolutions": {
-        "original": {
-          "url": "https://static.tvmaze.com/uploads/images/original_untouched/423/1058270.jpg",
-          "width": 3840,
-          "height": 2160
         }
       }
     }
