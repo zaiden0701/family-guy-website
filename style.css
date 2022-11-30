@@ -1,3 +1,23 @@
 body {
-    background: #3ba3d3
+    background: #110053a8
   }
+
+h1 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #3ba3d3;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+div {
+  text-align: center
+}
+
+img {
+  height: 300px;
+  width: 204px;
+  padding: 20px;
+  border-radius: 20%;
+  box-shadow: 5px 5px 10px #1c0f4ea8;
+}
