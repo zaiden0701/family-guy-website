@@ -1,3 +1,8 @@
+//DOM content loaded event
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("The DOM has loaded")
+  })
+
 //fetch data
 const getMainImg = () => {
     fetch('http://localhost:3000/images')
@@ -9,15 +14,15 @@ const getMainImg = () => {
 }
 getMainImg()
 
-const getCast = () => {
-    fetch('http://localhost:3000/cast')
-    .then((resp) => (resp.json()))
-    .then((data) => {
-        console.log(data)
-        renderCastImg(data)
-    })
-}
-getCast()
+// const getCast = () => {
+//     fetch('http://localhost:3000/cast')
+//     .then((resp) => (resp.json()))
+//     .then((data) => {
+//         console.log(data)
+//         renderCastImg(data)
+//     })
+// }
+// getCast()
 
 //render main image
 function renderMainImg(main){
@@ -42,8 +47,9 @@ function renderMainImg(main){
 // }
 
 //character card dropdown (change event)
-const select = document.querySelector('select')
-select.addEventListener('change', filterChar)
+
+// const select = document.querySelector('select')
+// select.addEventListener('change', filterChar)
 
 // function filterChar(e) {
 //     let name = e.target.value
