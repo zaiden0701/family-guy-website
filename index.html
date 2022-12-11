@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
     <title>Family Guy Interactive</title>
-    <script src="script.js" charset="utf-8"></script>
   </head>
 
   <body>
@@ -16,18 +15,20 @@
     </div>
 
     <div>
-      <div id='list' class='comments'></div>
+      <!-- <div id='list' class='comments'></div> -->
       <h3>Leave a comment about your favorite family guy!</h3>
-      <form id="comment-form" action="">
-        <input type='text' name="comment" id="comment-input" cols="30" rows="10">
-        </br>
-        <button id='submit'>post</button>
+      <form id="comment-form">
+        <input type='text' name="comment">
+        <br></br>
+        <button type="submit" id="submit">post</button>
       </form>
+      <ul id="comment-log"></ul>
     </div>
 
     <div id="result">
       <!--img-->
     </div>
-
+    
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

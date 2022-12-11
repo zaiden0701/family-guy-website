@@ -80,19 +80,29 @@ function renderProfile(profile){
 // }
 
 //liking 
-const likes = document.getElementById('likes')
-const likeBtn = document.getElementsByClassName('like-btn')
-likeBtn.addEventListener('click', (likes) => {
-    let likedMsg = document.createElement('li')
-    likedMsg.textContent = `Thanks for the like!`
-    likes.append(likedMsg)
-})
+// const likes = document.getElementById('likes')
+// const likeBtn = document.getElementsByClassName('like-btn')
+// likeBtn.addEventListener('click', (likes) => {
+//     let likedMsg = document.createElement('li')
+//     likedMsg.textContent = `Thanks for the like!`
+//     likes.append(likedMsg)
+// })
 
 //comment
-submit.addEventListener('click', (e) => {
+const commentForm = document.querySelector('#comment-form')
+const commentLog = document.querySelector('#comment-log')
+const comment = document.createElement('li')
+
+// commentForm.addEventListener('submit', (e) => {
+//     e.preventDefault()
+//     comment.innerText = e.target[0].value
+//     comments.appendChild(comment)
+//     commentForm.innerText = ''
+// })
+
+commentForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    const comment = document.createElement('li')
-    comments.append(comment)
-    comment.textContent(document.querySelector('#comment-input').value)
-    comment_form.reset()
+    comment.innerText = e.target[0].value
+    commentLog.appendChild(comment)
+    commentForm.reset()
 })
