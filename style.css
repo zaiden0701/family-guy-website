@@ -22,7 +22,7 @@ img {
   box-shadow: 5px 5px 10px #1c0f4ea8;
 }
 
-label {
+div {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #3ba3d3;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -36,5 +36,12 @@ label {
 #profile-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #3ba3d3;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+button {
+  background-color: transparent;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ffffff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

@@ -93,13 +93,6 @@ const commentForm = document.querySelector('#comment-form')
 const commentLog = document.querySelector('#comment-log')
 const comment = document.createElement('li')
 
-// commentForm.addEventListener('submit', (e) => {
-//     e.preventDefault()
-//     comment.innerText = e.target[0].value
-//     comments.appendChild(comment)
-//     commentForm.innerText = ''
-// })
-
 commentForm.addEventListener('submit', (e) => {
     e.preventDefault()
     comment.innerText = e.target[0].value
