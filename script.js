@@ -47,9 +47,7 @@ function renderProfile(profile){
         <p> ${profileImg.maincharacter.born} </p>
         <p> ${profileImg.maincharacter.occupation} </p>
         <p> ${profileImg.maincharacter.height} </p>
-        <p> ${profileImg.maincharacter.voice} </p>
-        <button id='likeButton'> Click if you like ${profileImg.maincharacter.name} ❤️ </button>
-        <ul id='likes'></ul>`
+        <p> ${profileImg.maincharacter.voice} </p>`
         div2.append(newDiv)
       })
 }
@@ -68,7 +66,10 @@ select.addEventListener('change', (e) => {
     const button = document.createElement('button')
     description.append(button)
     button.innerHTML = ''
-    button.innerHTML = `Show some love ❤️ to ${e.target.value}`
+    button.innerHTML = `Click if you like ❤️ ${e.target.value}`
+    button.addEventListener('click', (event) => {
+        button.textContent = `Thanks for showing love ${event.detail} times!`
+    })
 })
 
 // select.addEventListener('change', (e) => {
