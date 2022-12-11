@@ -82,8 +82,17 @@ function renderProfile(profile){
 //liking 
 const likes = document.getElementById('likes')
 const likeBtn = document.getElementsByClassName('like-btn')
-likeBtn.addEventListener('click', (e) => {
+likeBtn.addEventListener('click', (likes) => {
     let likedMsg = document.createElement('li')
-    likedMsg.textContent = `You liked `
+    likedMsg.textContent = `Thanks for the like!`
     likes.append(likedMsg)
+})
+
+//comment
+submit.addEventListener('click', (e) => {
+    e.preventDefault()
+    const comment = document.createElement('li')
+    comments.append(comment)
+    comment.textContent(document.querySelector('#comment-input').value)
+    comment_form.reset()
 })
