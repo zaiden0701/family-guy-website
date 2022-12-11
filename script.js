@@ -38,7 +38,7 @@ function renderMainImg(main){
 //render character images
 
 function renderProfile(profile){
-    const div2 = document.getElementById('result')
+    const div2 = document.getElementById('card')
     profile.forEach(profileImg => {
         const newDiv = document.createElement('div')
         newDiv.setAttribute('id','profile-text')
@@ -55,35 +55,28 @@ function renderProfile(profile){
 }
 
 //character card dropdown (change event)
-
 const select = document.querySelector('select')
+const description = document.getElementById('result')
 console.log(select)
+console.log(description)
+
+
 select.addEventListener('change', (e) => {
-    const result = document.getElementsByClassName('result')
-    result.textContent = `${e.target.value}`
+    description.innerHTML = ''
+    description.innerHTML = `You chose ${e.target.value}!`
+    console.log(description)
+    const button = document.createElement('button')
+    description.append(button)
+    button.innerHTML = ''
+    button.innerHTML = `Show some love ❤️ to ${e.target.value}`
 })
 
 // select.addEventListener('change', (e) => {
-//     let target = e.target.value
-
+//     const newDesc = document.createElement('li')
+//     description.append(newDesc)
+//     newDesc.innerText = `You chose ${e.target.value}!`
+//     console.log(newDesc)
 // })
-// function renderProfile(e){
-//     let event = e.target.value
-//     const name = 
-//     console.log(name)
-    // e.forEach(profileChar => {
-    //     name.innerHTML = profileChar.name
-    // })
-// }
-
-// function filterChar(e) {
-//     let name = e.target.value
-//     let filteredChar = chars.filter((char) => {
-//         return char[0] === name
-//     })
-//     console.log(filteredChar)
-//     div2.innerHTML = 'whoa'
-// }
 
 //liking 
 // const likes = document.getElementById('likes')
