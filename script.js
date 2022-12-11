@@ -56,7 +56,13 @@ function renderProfile(profile){
 
 //character card dropdown (change event)
 
-// const select = document.querySelector('select')
+const select = document.querySelector('select')
+console.log(select)
+select.addEventListener('change', (e) => {
+    const result = document.getElementsByClassName('result')
+    result.textContent = `${e.target.value}`
+})
+
 // select.addEventListener('change', (e) => {
 //     let target = e.target.value
 
@@ -80,8 +86,8 @@ function renderProfile(profile){
 // }
 
 //liking 
-const likes = document.getElementById('likes')
-const likeButton = document.getElementById('likeButton')
+// const likes = document.getElementById('likes')
+// const likeButton = document.getElementById('likeButton')
 
 // likeButton.addEventListener('click', (e) => {
 //     likeButton.textContent = 'Click'
