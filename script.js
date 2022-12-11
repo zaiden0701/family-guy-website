@@ -46,6 +46,12 @@ function renderProfile(profile){
         img2.src = profileImg.maincharacter.url
         img2.innerHTML = profileImg.maincharacter.url
         div2.append(img2)
+        //name
+        const label = document.createElement('h2')
+        label.setAttribute('id','profile-text')
+        label.innerHTML = profileImg.maincharacter.name
+        div2.append(label)
+      })
 }
 
 //character card dropdown (change event)
