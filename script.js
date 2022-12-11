@@ -48,18 +48,19 @@ function renderProfile(profile){
         <p> ${profileImg.maincharacter.occupation} </p>
         <p> ${profileImg.maincharacter.height} </p>
         <p> ${profileImg.maincharacter.voice} </p>
-        <button class='like-btn'> Click if you like ${profileImg.maincharacter.name} ❤️ </button>`
+        <button class='like-btn'> Click if you like ${profileImg.maincharacter.name} ❤️ </button>
+        <ul id='likes'> </ul>`
         div2.append(label)
       })
 }
 
 //character card dropdown (change event)
 
-const select = document.querySelector('select')
-select.addEventListener('change', (e) => {
-    let target = e.target.value
+// const select = document.querySelector('select')
+// select.addEventListener('change', (e) => {
+//     let target = e.target.value
 
-})
+// })
 // function renderProfile(e){
 //     let event = e.target.value
 //     const name = 
@@ -79,5 +80,10 @@ select.addEventListener('change', (e) => {
 // }
 
 //liking 
-const emptyHeart = '♡'
-const fullHeart = '♥'
+const likes = document.getElementById('likes')
+const likeBtn = document.getElementsByClassName('like-btn')
+likeBtn.addEventListener('click', (e) => {
+    let likedMsg = document.createElement('li')
+    likedMsg.textContent = `You liked `
+    likes.append(likedMsg)
+})
