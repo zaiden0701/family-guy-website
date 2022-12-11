@@ -860,7 +860,72 @@
       "voice": true
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "profile": [
+    {
+      "maincharacter": {
+        "id": "1",
+        "name": "Peter Griffin",
+        "born": "Born in 1956",
+        "occupation": "Brewery shipping clerk",
+        "height": "6 ft 0.75 in",
+        "voice": "Voiced by Seth MacFarlane",
+        "description": "",
+        "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86852.jpg"
+      }},
+    {
+      "maincharacter": {
+        "id": "2",
+        "name": "Lois Griffin",
+        "born": "Born in 1958",
+        "occupation": "Stay at home parent",
+        "height": "5 ft 8 in",
+        "voice": "Voiced by Alex Borstein",
+        "description": "",
+        "url": "https://static.tvmaze.com/uploads/images/original_untouched/53/133961.jpg"
+      }},
+    {
+      "maincharacter": {
+        "id": "3",
+        "name": "Meg Griffin",
+        "born": "Born in ",
+        "occupation": "Student",
+        "height": "Unknown",
+        "voice": "Voiced by Mila Kunis",
+        "description": "",
+        "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86859.jpg"
+      }},
+    {
+      "maincharacter": {
+        "id": "4",
+        "name": "Chris Griffin",
+        "born": "Born in 1986",
+        "occupation": "Student",
+        "height": "Unknown",
+        "voice": "Voiced by Seth Green",
+        "description": "",
+        "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86860.jpg"
+      }},
+    {
+      "maincharacter": {
+        "id": "5",
+        "name": "Stewie Griffin",
+        "born": "Born in 1998",
+        "occupation": "Inventor",
+        "height": "Unknown",
+        "voice": "Voiced by Seth MacFarlane",
+        "description": "",
+        "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86855.jpg"
+      }},
+    {
+       "maincharacter": {
+        "id": "6",
+        "name": "Brian Griffin",
+        "born": "Born in 1992",
+        "occupation": "Writer",
+        "height": "Unknown",
+        "voice": "Voiced by Seth MacFarlane",
+        "description": "",
+        "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86856.jpg"
+        }}
+    ]
 }

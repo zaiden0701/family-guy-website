@@ -14,15 +14,15 @@ const getMainImg = () => {
 }
 getMainImg()
 
-// const getCast = () => {
-//     fetch('http://localhost:3000/cast')
-//     .then((resp) => (resp.json()))
-//     .then((data) => {
-//         console.log(data)
-//         renderCastImg(data)
-//     })
-// }
-// getCast()
+const getProfile = () => {
+    fetch('http://localhost:3000/profile')
+    .then((resp) => (resp.json()))
+    .then((data) => {
+        console.log(data)
+        renderProfile(data)
+    })
+}
+getProfile()
 
 //render main image
 function renderMainImg(main){
@@ -36,20 +36,31 @@ function renderMainImg(main){
 }
 
 //render character images
-// function renderCastImg(cast){
-//     const div2 = document.getElementsByClassName('result')
-//     cast.forEach(charImg => {
-//         const img = document.createElement('img')
-//         img.src = charImg.character.image.medium
-//         img.innerHTML = charImg.character.image.medium
-//         div2.append(img)
-//       })
-// }
+
+function renderProfile(profile){
+    const div2 = document.getElementById('result')
+    profile.forEach(profileImg => {
+        //img
+        const img2 = document.createElement('img')
+        img2.setAttribute('id','profile-img')
+        img2.src = profileImg.maincharacter.url
+        img2.innerHTML = profileImg.maincharacter.url
+        div2.append(img2)
+}
 
 //character card dropdown (change event)
 
 // const select = document.querySelector('select')
-// select.addEventListener('change', filterChar)
+// select.addEventListener('change', renderProfile)
+
+// function renderProfile(e){
+//     let event = e.target.value
+//     const name = 
+//     console.log(name)
+    // e.forEach(profileChar => {
+    //     name.innerHTML = profileChar.name
+    // })
+// }
 
 // function filterChar(e) {
 //     let name = e.target.value
@@ -57,5 +68,9 @@ function renderMainImg(main){
 //         return char[0] === name
 //     })
 //     console.log(filteredChar)
-//     div.innerHTML = ''
+//     div2.innerHTML = 'whoa'
 // }
+
+//liking 
+const emptyHeart = '♡'
+const fullHeart = '♥'
