@@ -48,8 +48,8 @@ function renderProfile(profile){
         <p> ${profileImg.maincharacter.occupation} </p>
         <p> ${profileImg.maincharacter.height} </p>
         <p> ${profileImg.maincharacter.voice} </p>
-        <button class='like-btn'> Click if you like ${profileImg.maincharacter.name} ❤️ </button>
-        <ul id='likes'> </ul>`
+        <button id='likeButton'> Click if you like ${profileImg.maincharacter.name} ❤️ </button>
+        <ul id='likes'></ul>`
         div2.append(label)
       })
 }
@@ -80,21 +80,26 @@ function renderProfile(profile){
 // }
 
 //liking 
-// const likes = document.getElementById('likes')
-// const likeBtn = document.getElementsByClassName('like-btn')
-// likeBtn.addEventListener('click', (likes) => {
-//     let likedMsg = document.createElement('li')
+const likes = document.getElementById('likes')
+const likeButton = document.getElementById('likeButton')
+
+// likeButton.addEventListener('click', (e) => {
+//     likeButton.textContent = 'Click'
+// })
+
+// likeButton.addEventListener('click', (e) => {
+//     const likedMsg = document.createElement('li')
 //     likedMsg.textContent = `Thanks for the like!`
-//     likes.append(likedMsg)
+//     likes.appendChild(likedMsg)
 // })
 
 //comment
 const commentForm = document.querySelector('#comment-form')
 const commentLog = document.querySelector('#comment-log')
-const comment = document.createElement('li')
 
 commentForm.addEventListener('submit', (e) => {
     e.preventDefault()
+    const comment = document.createElement('li')
     comment.innerText = e.target[0].value
     commentLog.appendChild(comment)
     commentForm.reset()
