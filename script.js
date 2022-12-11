@@ -40,25 +40,26 @@ function renderMainImg(main){
 function renderProfile(profile){
     const div2 = document.getElementById('result')
     profile.forEach(profileImg => {
-        //img
-        const img2 = document.createElement('img')
-        img2.setAttribute('id','profile-img')
-        img2.src = profileImg.maincharacter.url
-        img2.innerHTML = profileImg.maincharacter.url
-        div2.append(img2)
-        //name
-        const label = document.createElement('h2')
+        const label = document.createElement('div')
         label.setAttribute('id','profile-text')
-        label.innerHTML = profileImg.maincharacter.name
+        label.innerHTML = `<h2> ${profileImg.maincharacter.name} </h2>
+        <img src='${profileImg.maincharacter.url}' id='profile-img' />
+        <p> ${profileImg.maincharacter.born} </p>
+        <p> ${profileImg.maincharacter.occupation} </p>
+        <p> ${profileImg.maincharacter.height} </p>
+        <p> ${profileImg.maincharacter.voice} </p>
+        <button class='like-btn'> Click if you like ${profileImg.maincharacter.name} ❤️ </button>`
         div2.append(label)
       })
 }
 
 //character card dropdown (change event)
 
-// const select = document.querySelector('select')
-// select.addEventListener('change', renderProfile)
+const select = document.querySelector('select')
+select.addEventListener('change', (e) => {
+    let target = e.target.value
 
+})
 // function renderProfile(e){
 //     let event = e.target.value
 //     const name = 
