@@ -40,9 +40,9 @@ function renderMainImg(main){
 function renderProfile(profile){
     const div2 = document.getElementById('result')
     profile.forEach(profileImg => {
-        const label = document.createElement('div')
-        label.setAttribute('id','profile-text')
-        label.innerHTML = `<h2> ${profileImg.maincharacter.name} </h2>
+        const newDiv = document.createElement('div')
+        newDiv.setAttribute('id','profile-text')
+        newDiv.innerHTML = `<h2> ${profileImg.maincharacter.name} </h2>
         <img src='${profileImg.maincharacter.url}' id='profile-img' />
         <p> ${profileImg.maincharacter.born} </p>
         <p> ${profileImg.maincharacter.occupation} </p>
@@ -50,7 +50,7 @@ function renderProfile(profile){
         <p> ${profileImg.maincharacter.voice} </p>
         <button id='likeButton'> Click if you like ${profileImg.maincharacter.name} ❤️ </button>
         <ul id='likes'></ul>`
-        div2.append(label)
+        div2.append(newDiv)
       })
 }
 
