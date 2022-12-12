@@ -887,9 +887,9 @@
       "maincharacter": {
         "id": "3",
         "name": "Meg Griffin",
-        "born": "Born in ",
+        "born": "Born in 1984",
         "occupation": "Student",
-        "height": "Unknown",
+        "height": "5 ft 2 in",
         "voice": "Voiced by Mila Kunis",
         "description": "",
         "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86859.jpg"
@@ -900,7 +900,7 @@
         "name": "Chris Griffin",
         "born": "Born in 1986",
         "occupation": "Student",
-        "height": "Unknown",
+        "height": "5 ft 7 in",
         "voice": "Voiced by Seth Green",
         "description": "",
         "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86860.jpg"
@@ -911,7 +911,7 @@
         "name": "Stewie Griffin",
         "born": "Born in 1998",
         "occupation": "Inventor",
-        "height": "Unknown",
+        "height": "2 ft 7 in",
         "voice": "Voiced by Seth MacFarlane",
         "description": "",
         "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86855.jpg"
@@ -922,7 +922,7 @@
         "name": "Brian Griffin",
         "born": "Born in 1992",
         "occupation": "Writer",
-        "height": "Unknown",
+        "height": "4 ft 7 in",
         "voice": "Voiced by Seth MacFarlane",
         "description": "",
         "url": "https://static.tvmaze.com/uploads/images/original_untouched/34/86856.jpg"
