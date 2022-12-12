@@ -17,10 +17,8 @@ getMainImg()
 const getProfile = () => {
     fetch('http://localhost:3000/profile')
     .then((resp) => (resp.json()))
-    .then((data) => {
-        console.log(data)
-        renderProfile(data)
-    })
+    .then((data) => renderProfile(data))
+    // .then((data) => renderCharacterDescription(data))
 }
 getProfile()
 
@@ -49,6 +47,8 @@ function renderProfile(profile){
         <p> ${profileImg.maincharacter.height} </p>
         <p> ${profileImg.maincharacter.voice} </p>`
         div2.append(newDiv)
+        //desc
+
       })
 }
 
@@ -63,6 +63,17 @@ select.addEventListener('change', (e) => {
     description.innerHTML = ''
     description.innerHTML = `You chose ${e.target.value}!`
     console.log(description)
+    //desc 
+    // function renderCharacterDescription(jsonDescription){
+    //     jsonDescription.forEach(jsonObject => {
+    //         jsonObject.find()
+    //         const newDesc = document.createElement('p')
+    //         newDesc.setAttribute('id','dropdown')
+    //         newDesc.innerHTML = jsonObject.maincharacter.description
+    //         description.append(newDesc)
+    //     })
+    // }
+    //button
     const button = document.createElement('button')
     description.append(button)
     button.innerHTML = ''
